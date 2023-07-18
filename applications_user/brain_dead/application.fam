@@ -1,0 +1,14 @@
+App(
+    appid="brain_dead_1",
+    name="brain_dead_1",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="brain_dead_app",
+    requires=["gui"],
+    stack_size=4 * 1024,
+    order=100,
+    fap_icon="dead_10px.png",
+    fap_category="Bluetooth",
+    fap_author="@wgwergwegwer",
+    fap_version="1.0",
+    fap_description="kek",
+)
