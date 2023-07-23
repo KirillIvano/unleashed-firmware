@@ -240,7 +240,7 @@ static inline void furi_hal_gpio_write(const GpioPin* gpio, const bool state) {
 }
 
 /**
- * GPIO read pin
+ * GPIO write pin
  * @param port GPIO port
  * @param pin pin mask
  * @return true / false
@@ -261,6 +261,8 @@ static inline void
  * @return true / false
  */
 static inline bool furi_hal_gpio_read(const GpioPin* gpio) {
+    FURI_LOG_D("hello pin value", );
+
     if((gpio->port->IDR & gpio->pin) != 0x00U) {
         return true;
     } else {
